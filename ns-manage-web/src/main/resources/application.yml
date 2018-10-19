@@ -1,0 +1,18 @@
+#端口号
+server:
+  port: 8110
+#  松校验
+spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+#控制台打印日志
+logging:
+  level:
+    root: info
+#服务发现
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

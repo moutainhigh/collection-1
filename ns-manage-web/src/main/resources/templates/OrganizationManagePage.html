@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="easyui-panel" style="padding:5px;">
+    <a href="#" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-mini-add'">Add</a>
+    <a href="#" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-mini-edit'">Edit</a>
+    <a href="#" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-delete'">Remove</a>
+</div>
+<table id="tt" class="easyui-treegrid" style="width:auto;height:auto"
+       data-options="idField:'id',treeField:'name'">
+    <thead>
+    <tr>
+        <th data-options="field:'id',width:20"></th>
+        <th data-options="field:'name',width:180">机构名称</th>
+        <th data-options="field:'persons',width:60,align:'right'">机构类型</th>
+        <th data-options="field:'begin',width:80">机构编码</th>
+        <th data-options="field:'end',width:80">负责人</th>
+        <th data-options="field:'end',width:80">业务覆盖区域</th>
+        <th data-options="field:'end',width:80">地址</th>
+        <th data-options="field:'end',width:80">电话号码</th>
+        <th data-options="field:'end',width:80">邮政编码</th>
+        <th data-options="field:'end',width:80">传真号</th>
+        <th data-options="field:'end',width:80">创建时间</th>
+        <th data-options="field:'end',width:80">修改时间</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>

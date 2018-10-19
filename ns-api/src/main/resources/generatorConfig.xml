@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--数据库的连接的四个属性-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/collection"
+                        userId="root"
+                        password="0100">
+        </jdbcConnection>
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!--制定javabean的位置-->
+        <javaModelGenerator targetPackage="com.atguigu.bean" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!--制定sql映射文件的位置-->
+        <sqlMapGenerator targetPackage="com.atguigu.mapper"  targetProject="src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!--制定dao接口的位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.atguigu.service"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        <!--指定具体的表-->
+        <table tableName="sys_resource"  />
+        <table tableName="sys_organization"   />
+        <table tableName="sys_dictionary"   />
+        <table tableName="sys_position"   />
+        <table tableName="entrust"   />
+        <table tableName="sys_role_resource_relation"   />
+        <table tableName="sys_role "   />
+        <table tableName="sys_user_role_relation "   />
+        <table tableName="employee_info "   />
+        <table tableName="area "   />
+        <table tableName="template "   />
+        <table tableName="case_batch "   />
+        <table tableName="case_info "   />
+        <table tableName="phone_record "   />
+        <table tableName="visit_record "   />
+        <table tableName="case_apply "   />
+        <table tableName="case_paid "   />
+        <table tableName="case_linkman "   />
+        <table tableName="address "   />
+
+    </context>
+</generatorConfiguration>
